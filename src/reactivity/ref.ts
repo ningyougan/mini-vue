@@ -64,7 +64,6 @@ export function proxyRefs(objectWithRefs) {
 
     set(target, key, value) {
       if (isRef(target[key]) && !isRef(value)) {
-        console.log(target[key].value);
         return (target[key].value = value);
       } else {
         return Reflect.set(target, key, value);
