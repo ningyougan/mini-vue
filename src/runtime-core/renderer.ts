@@ -2,6 +2,7 @@ import { createComponentInstance, setupComponent } from "./component";
 
 export function render(vnode, container) {
   // patch
+  // processElement();
   patch(vnode, container);
 }
 

@@ -42,7 +42,7 @@ function finishComponentSetup(instance: any) {
   // Implement
   const Component = instance.type;
 
+  instance.render = Component.render;
   if (Component.render) {
-    instance.render = Component.render;
   }
 }
